@@ -1,0 +1,535 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  background:#fffafc;
+  color:#2d2140;
+  overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+  width:100%;
+  padding:20px 70px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:white;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 4px 20px rgba(0,0,0,0.05);
+}
+
+.logo{
+  font-size:32px;
+  font-weight:700;
+  color:#8b5cf6;
+}
+
+nav{
+  display:flex;
+  gap:30px;
+}
+
+nav a{
+  text-decoration:none;
+  color:#444;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#d946ef;
+}
+
+/* SEARCH */
+
+.search-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.search-box input{
+  padding:14px 20px;
+  width:260px;
+  border:none;
+  border-radius:40px;
+  background:#f4ebff;
+  outline:none;
+  font-size:15px;
+}
+
+.search-box button{
+  padding:12px 22px;
+}
+
+/* HERO */
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:80px;
+  gap:60px;
+}
+
+.hero-text{
+  flex:1;
+}
+
+.tag{
+  color:#8b5cf6;
+  font-weight:600;
+}
+
+.hero h1{
+  font-size:70px;
+  line-height:1.1;
+  margin:20px 0;
+}
+
+.hero h1 span{
+  color:#d946ef;
+}
+
+.hero p{
+  color:#666;
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.hero-buttons a{
+  text-decoration:none;
+}
+
+button{
+  padding:16px 30px;
+  border:none;
+  border-radius:40px;
+  background:#8b5cf6;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:translateY(-5px);
+}
+
+.secondary{
+  background:#fde68a;
+  color:#2d2140;
+}
+
+.hero-images{
+  flex:1;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.hero-images img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  border-radius:30px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* TITULOS */
+
+.section-title{
+  padding:0 80px;
+  margin-bottom:30px;
+}
+
+.section-title h2{
+  font-size:42px;
+}
+
+/* SERIES */
+
+.series{
+  padding:60px 0;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  padding:0 80px;
+}
+
+.card{
+  background:white;
+  border-radius:30px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card a{
+  text-decoration:none;
+}
+
+.card img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+}
+
+.card h3{
+  padding:20px 20px 5px;
+  color:#2d2140;
+}
+
+.card p{
+  padding:0 20px 20px;
+  color:#777;
+}
+
+/* DETALHE SERIE */
+
+.serie-detalhe{
+  padding:100px 80px;
+  max-width:1600px;
+  margin:auto;
+}
+
+.serie-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:60px;
+  background:linear-gradient(135deg,#fdf4ff,#fef9c3);
+  padding:50px;
+  border-radius:40px;
+  flex-wrap:wrap;
+}
+
+.serie-info{
+  flex:1;
+  min-width:300px;
+}
+
+.categoria{
+  color:#d946ef;
+  font-weight:600;
+}
+
+.serie-info h2{
+  font-size:60px;
+  margin:20px 0;
+}
+
+.serie-info p{
+  color:#555;
+  line-height:1.8;
+  margin-bottom:30px;
+}
+
+.serie-banner{
+  flex:1;
+  min-width:300px;
+}
+
+.serie-banner img{
+  width:100%;
+  height:450px;
+  object-fit:cover;
+  border-radius:35px;
+}
+
+/* PERSONAGENS */
+
+.personagens-area{
+  margin-top:60px;
+}
+
+.personagens-area h3{
+  font-size:38px;
+  margin-bottom:40px;
+}
+
+.personagens-grid{
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.personagem-card{
+  text-align:center;
+}
+
+.personagem-card a{
+  text-decoration:none;
+  color:#2d2140;
+}
+
+.personagem-card img{
+  width:130px;
+  height:130px;
+  object-fit:cover;
+  border-radius:50%;
+  border:6px solid #f4ebff;
+  transition:0.3s;
+}
+
+.personagem-card img:hover{
+  transform:scale(1.08);
+}
+
+.personagem-card p{
+  margin-top:12px;
+  font-weight:600;
+}
+
+/* PERSONAGEM DETALHE */
+
+.personagem-detalhe{
+  padding:100px 80px;
+  max-width:1600px;
+  margin:auto;
+}
+
+/* GALERIA */
+
+.galeria-personagem{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.galeria-personagem img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  border-radius:30px;
+  transition:0.3s;
+  cursor:pointer;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.galeria-personagem img:hover{
+  transform:scale(1.03);
+}
+
+/* LOOK */
+
+.look-completo{
+  margin-top:80px;
+  display:flex;
+  gap:50px;
+  align-items:flex-start;
+  flex-wrap:wrap;
+}
+
+.look-imagem{
+  flex:1;
+  min-width:300px;
+}
+
+.look-imagem img{
+  width:100%;
+  height:700px;
+  object-fit:cover;
+  border-radius:40px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* ROUPAS */
+
+.roupas-area{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+  min-width:300px;
+}
+
+.roupas-area h3{
+  font-size:38px;
+  margin-bottom:10px;
+}
+
+.roupa-card{
+  background:white;
+  border-radius:30px;
+  padding:20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  flex-wrap:wrap;
+}
+
+.roupa-card img{
+  width:90px;
+  height:90px;
+  object-fit:cover;
+  border-radius:20px;
+}
+
+.roupa-info{
+  flex:1;
+}
+
+.roupa-info h4{
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.roupa-info p{
+  color:#d946ef;
+  font-weight:600;
+}
+
+.roupa-card a{
+  text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+  margin-top:100px;
+  background:#f4ebff;
+  padding:70px;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:40px;
+}
+
+footer h2{
+  color:#8b5cf6;
+  margin-bottom:15px;
+}
+
+footer h4{
+  margin-bottom:15px;
+}
+
+footer p{
+  color:#666;
+  margin-bottom:10px;
+}
+
+/* IMAGENS */
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+  .navbar{
+    padding:20px;
+    flex-direction:column;
+    gap:20px;
+  }
+
+  nav{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero{
+    flex-direction:column;
+    padding:40px 20px;
+  }
+
+  .hero h1{
+    font-size:45px;
+  }
+
+  .section-title{
+    padding:0 20px;
+  }
+
+  .cards{
+    padding:0 20px;
+  }
+
+  .serie-detalhe,
+  .personagem-detalhe{
+    padding:60px 20px;
+  }
+
+  .serie-container{
+    padding:30px 20px;
+  }
+
+  .serie-info h2{
+    font-size:42px;
+  }
+
+  .hero-images{
+    grid-template-columns:1fr;
+  }
+
+  .look-completo{
+    flex-direction:column;
+  }
+
+  .look-imagem img{
+    height:500px;
+  }
+
+  .roupa-card{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .search-box{
+    width:100%;
+    flex-direction:column;
+  }
+
+  .search-box input{
+    width:100%;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .galeria-personagem{
+    grid-template-columns:1fr;
+  }
+
+  footer{
+    padding:40px 20px;
+    flex-direction:column;
+  }
+
+}
+
+
